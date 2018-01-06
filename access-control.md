@@ -58,3 +58,7 @@ StoreServer:
         // No UnauthenticatedMethod
 ```
 
+For these authenticated methods, the Dial method is used to create a
+server dedicated to answering that user. With this mechanism we know
+for sure that the server that is returned by Dial will only be
+accessible from the legitimate user. Or is it? (TODO: check that)
