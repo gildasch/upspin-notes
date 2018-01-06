@@ -24,3 +24,37 @@ official store server however doesn't check any access right and will
 serve the stored bytes to anybody with a valid token. The security is
 provided here by the fact that the data that is served by the store is
 encrypted.
+
+List of authenticated and unauthenticated methods:
+
+```
+KeyServer:
+~~~~~~~~~~
+		Methods: map[string]rpc.Method{
+			"Put": s.Put,
+		},
+		UnauthenticatedMethods: map[string]rpc.UnauthenticatedMethod{
+			"Lookup": s.Lookup,
+		},
+
+DirServer:
+~~~~~~~~~~
+		Methods: map[string]rpc.Method{
+			"Delete":      s.Delete,
+			"Glob":        s.Glob,
+			"Lookup":      s.Lookup,
+			"Put":         s.Put,
+			"WhichAccess": s.WhichAccess,
+		},
+        // No UnauthenticatedMethod
+
+StoreServer:
+~~~~~~~~~~~~
+		Methods: map[string]rpc.Method{
+			"Get":    s.Get,
+			"Put":    s.Put,
+			"Delete": s.Delete,
+		},
+        // No UnauthenticatedMethod
+```
+
