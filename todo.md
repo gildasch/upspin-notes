@@ -1,0 +1,11 @@
+- SIMPLIFY!!!!
+- More details and more time on "What is upspin?" and the 3 words
+  - What is that drawing on the 3 words
+- In implementations
+  - Take time to explain what is a client
+  - Make a summary of the parts of the program
+    - Always keep the summary on screen?
+  - More time for explaining the server
+- In getting hands dirty
+  - Take time to explain the procedures of the creation of the upspin
+    client and the deployment of the servers
