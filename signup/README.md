@@ -1,5 +1,11 @@
 1. Go to [homepage](https://upspin.io/)
+
+![homepage](01-homepage.png)
+
 1. Go to [download the Upspin client](https://upspin.io/dl/)
+
+![download](02-download.png)
+
 1. `wget https://upspin.io/dl/upspin.linux_amd64.tar.gz`
 1. `tar -xf upspin.linux_amd64.tar.gz`
 1. ```$ ls
